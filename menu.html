@@ -51,67 +51,53 @@
 
     <section class="container">
         <div class="category-nav-horizontal">
-            <button class="cat-btn active" data-cat="all">🍽️ All</button>
-            <button class="cat-btn" data-cat="coffee">☕ Coffee</button>
-            <button class="cat-btn" data-cat="pastries">🥐 Pastries</button>
-            <button class="cat-btn" data-cat="cakes">🍰 Cakes</button>
-            <button class="cat-btn" data-cat="sandwiches">🥪 Sandwiches</button>
-            <button class="cat-btn" data-cat="drinks">🧋 Other Drinks</button>
+            <button class="cat-filter-btn active" data-filter="all">🍽️ All</button>
+            <button class="cat-filter-btn" data-filter="coffee">☕ Coffee</button>
+            <button class="cat-filter-btn" data-filter="pastries">🥐 Pastries</button>
+            <button class="cat-filter-btn" data-filter="cakes">🍰 Cakes</button>
+            <button class="cat-filter-btn" data-filter="sandwiches">🥪 Sandwiches</button>
         </div>
 
         <div class="cards-grid">
-            <!-- Coffee -->
-            <div class="product-card" data-cat="coffee">
+            <div class="product-card" data-category="coffee">
                 <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop" class="card-image">
                 <div class="card-content"><h3>Vanilla Latte</h3><p>Smooth espresso, steamed milk, vanilla</p><div class="price">ETB 85</div><a href="order.html" class="shop-now-btn">Order →</a></div>
             </div>
-            <div class="product-card" data-cat="coffee">
+            <div class="product-card" data-category="coffee">
                 <img src="https://images.unsplash.com/photo-1514432328607-a09d9b4aefdd?w=400&h=300&fit=crop" class="card-image">
                 <div class="card-content"><h3>Cappuccino</h3><p>Classic Italian cappuccino</p><div class="price">ETB 75</div><a href="order.html" class="shop-now-btn">Order →</a></div>
             </div>
-            <div class="product-card" data-cat="coffee">
+            <div class="product-card" data-category="coffee">
                 <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=300&fit=crop" class="card-image">
                 <div class="card-content"><h3>Americano</h3><p>Rich espresso with hot water</p><div class="price">ETB 55</div><a href="order.html" class="shop-now-btn">Order →</a></div>
             </div>
-            <!-- Pastries -->
-            <div class="product-card" data-cat="pastries">
+            <div class="product-card" data-category="pastries">
                 <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&h=300&fit=crop" class="card-image">
                 <div class="card-content"><h3>Butter Croissant</h3><p>Flaky, golden, pure butter</p><div class="price">ETB 65</div><a href="order.html" class="shop-now-btn">Order →</a></div>
             </div>
-            <div class="product-card" data-cat="pastries">
+            <div class="product-card" data-category="pastries">
                 <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=400&h=300&fit=crop" class="card-image">
                 <div class="card-content"><h3>Chocolate Danish</h3><p>With dark chocolate filling</p><div class="price">ETB 75</div><a href="order.html" class="shop-now-btn">Order →</a></div>
             </div>
-            <div class="product-card" data-cat="pastries">
+            <div class="product-card" data-category="pastries">
                 <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?w=400&h=300&fit=crop" class="card-image">
                 <div class="card-content"><h3>Cinnamon Roll</h3><p>Swirled with cinnamon glaze</p><div class="price">ETB 70</div><a href="order.html" class="shop-now-btn">Order →</a></div>
             </div>
-            <!-- Cakes -->
-            <div class="product-card" data-cat="cakes">
+            <div class="product-card" data-category="cakes">
                 <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9582?w=400&h=300&fit=crop" class="card-image">
                 <div class="card-content"><h3>Vanilla Bean Cake</h3><p>Moist, real vanilla</p><div class="price">ETB 180</div><a href="order.html" class="shop-now-btn">Order →</a></div>
             </div>
-            <div class="product-card" data-cat="cakes">
+            <div class="product-card" data-category="cakes">
                 <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=400&h=300&fit=crop" class="card-image">
                 <div class="card-content"><h3>Carrot Cake</h3><p>With cream cheese frosting</p><div class="price">ETB 160</div><a href="order.html" class="shop-now-btn">Order →</a></div>
             </div>
-            <!-- Sandwiches -->
-            <div class="product-card" data-cat="sandwiches">
+            <div class="product-card" data-category="sandwiches">
                 <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&h=300&fit=crop" class="card-image">
                 <div class="card-content"><h3>Grilled Chicken Sandwich</h3><p>Fresh baguette, grilled chicken, lettuce</p><div class="price">ETB 150</div><a href="order.html" class="shop-now-btn">Order →</a></div>
             </div>
-            <div class="product-card" data-cat="sandwiches">
+            <div class="product-card" data-category="sandwiches">
                 <img src="https://images.unsplash.com/photo-1509722747041-616f39b57569?w=400&h=300&fit=crop" class="card-image">
                 <div class="card-content"><h3>Veggie Wrap</h3><p>Fresh vegetables, hummus, tortilla</p><div class="price">ETB 120</div><a href="order.html" class="shop-now-btn">Order →</a></div>
-            </div>
-            <!-- Other Drinks -->
-            <div class="product-card" data-cat="drinks">
-                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=300&fit=crop" class="card-image">
-                <div class="card-content"><h3>Fresh Lemonade</h3><p>Homemade, refreshing</p><div class="price">ETB 50</div><a href="order.html" class="shop-now-btn">Order →</a></div>
-            </div>
-            <div class="product-card" data-cat="drinks">
-                <img src="https://images.unsplash.com/photo-1544829099-b9a0c07e1d5c?w=400&h=300&fit=crop" class="card-image">
-                <div class="card-content"><h3>Hot Chocolate</h3><p>Rich, creamy, topped with marshmallows</p><div class="price">ETB 80</div><a href="order.html" class="shop-now-btn">Order →</a></div>
             </div>
         </div>
     </section>
@@ -122,13 +108,13 @@
 <div id="toastMsg" class="toast-msg">✓ Added to cart</div>
 <script src="js/main.js"></script>
 <script>
-    document.querySelectorAll('.cat-btn').forEach(btn => {
+    document.querySelectorAll('.cat-filter-btn').forEach(btn => {
         btn.addEventListener('click', function() {
-            document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.cat-filter-btn').forEach(b => b.classList.remove('active'));
             this.classList.add('active');
-            const cat = this.getAttribute('data-cat');
+            const filter = this.getAttribute('data-filter');
             document.querySelectorAll('.product-card').forEach(card => {
-                card.style.display = (cat === 'all' || card.getAttribute('data-cat') === cat) ? 'block' : 'none';
+                card.style.display = (filter === 'all' || card.getAttribute('data-category') === filter) ? 'block' : 'none';
             });
         });
     });
