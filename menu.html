@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | VANILLA INN | Cafe & Bakery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="mobile-sidebar" id="mobileSidebar">
+    <div class="sidebar-header"><h3>🍦 VANILLA INN</h3><button class="close-sidebar" id="closeSidebarBtn"><i class="fas fa-times"></i></button></div>
+    <div class="sidebar-nav">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html"><i class="fas fa-heart"></i> About</a>
+        <a href="menu.html" class="active"><i class="fas fa-mug-hot"></i> Menu</a>
+        <a href="order.html"><i class="fas fa-shopping-bag"></i> Order</a>
+        <a href="contact.html"><i class="fas fa-map-pin"></i> Contact</a>
+    </div>
+    <a href="order.html" class="sidebar-order-btn"><i class="fas fa-shopping-cart"></i> ORDER NOW</a>
+    <div class="sidebar-footer"><p><i class="fas fa-phone"></i> +251 942 04 51 82</p><p><i class="fab fa-instagram"></i> @vanillainn12</p></div>
+</div>
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<header class="main-header">
+    <div class="container">
+        <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        <div class="logo"><a href="index.html"><h1>🍦 VANILLA INN</h1><span>Cafe & Bakery</span></a></div>
+        <nav class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="order.html">Order</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="order.html" class="btn-order"><i class="fas fa-shopping-cart"></i> Order Now</a>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1920&h=800&fit=crop');"></div>
+        <div class="hero-overlay-light"></div>
+        <div class="container hero-content">
+            <h1>Our Menu</h1>
+            <p>Freshly brewed coffee & baked goods</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="category-nav-horizontal">
+            <button class="cat-btn active" data-cat="all">🍽️ All</button>
+            <button class="cat-btn" data-cat="coffee">☕ Coffee</button>
+            <button class="cat-btn" data-cat="pastries">🥐 Pastries</button>
+            <button class="cat-btn" data-cat="cakes">🍰 Cakes</button>
+            <button class="cat-btn" data-cat="sandwiches">🥪 Sandwiches</button>
+            <button class="cat-btn" data-cat="drinks">🧋 Other Drinks</button>
+        </div>
+
+        <div class="cards-grid">
+            <!-- Coffee -->
+            <div class="product-card" data-cat="coffee">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop" class="card-image">
+                <div class="card-content"><h3>Vanilla Latte</h3><p>Smooth espresso, steamed milk, vanilla</p><div class="price">ETB 85</div><a href="order.html" class="shop-now-btn">Order →</a></div>
+            </div>
+            <div class="product-card" data-cat="coffee">
+                <img src="https://images.unsplash.com/photo-1514432328607-a09d9b4aefdd?w=400&h=300&fit=crop" class="card-image">
+                <div class="card-content"><h3>Cappuccino</h3><p>Classic Italian cappuccino</p><div class="price">ETB 75</div><a href="order.html" class="shop-now-btn">Order →</a></div>
+            </div>
+            <div class="product-card" data-cat="coffee">
+                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=300&fit=crop" class="card-image">
+                <div class="card-content"><h3>Americano</h3><p>Rich espresso with hot water</p><div class="price">ETB 55</div><a href="order.html" class="shop-now-btn">Order →</a></div>
+            </div>
+            <!-- Pastries -->
+            <div class="product-card" data-cat="pastries">
+                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&h=300&fit=crop" class="card-image">
+                <div class="card-content"><h3>Butter Croissant</h3><p>Flaky, golden, pure butter</p><div class="price">ETB 65</div><a href="order.html" class="shop-now-btn">Order →</a></div>
+            </div>
+            <div class="product-card" data-cat="pastries">
+                <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=400&h=300&fit=crop" class="card-image">
+                <div class="card-content"><h3>Chocolate Danish</h3><p>With dark chocolate filling</p><div class="price">ETB 75</div><a href="order.html" class="shop-now-btn">Order →</a></div>
+            </div>
+            <div class="product-card" data-cat="pastries">
+                <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?w=400&h=300&fit=crop" class="card-image">
+                <div class="card-content"><h3>Cinnamon Roll</h3><p>Swirled with cinnamon glaze</p><div class="price">ETB 70</div><a href="order.html" class="shop-now-btn">Order →</a></div>
+            </div>
+            <!-- Cakes -->
+            <div class="product-card" data-cat="cakes">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9582?w=400&h=300&fit=crop" class="card-image">
+                <div class="card-content"><h3>Vanilla Bean Cake</h3><p>Moist, real vanilla</p><div class="price">ETB 180</div><a href="order.html" class="shop-now-btn">Order →</a></div>
+            </div>
+            <div class="product-card" data-cat="cakes">
+                <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=400&h=300&fit=crop" class="card-image">
+                <div class="card-content"><h3>Carrot Cake</h3><p>With cream cheese frosting</p><div class="price">ETB 160</div><a href="order.html" class="shop-now-btn">Order →</a></div>
+            </div>
+            <!-- Sandwiches -->
+            <div class="product-card" data-cat="sandwiches">
+                <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&h=300&fit=crop" class="card-image">
+                <div class="card-content"><h3>Grilled Chicken Sandwich</h3><p>Fresh baguette, grilled chicken, lettuce</p><div class="price">ETB 150</div><a href="order.html" class="shop-now-btn">Order →</a></div>
+            </div>
+            <div class="product-card" data-cat="sandwiches">
+                <img src="https://images.unsplash.com/photo-1509722747041-616f39b57569?w=400&h=300&fit=crop" class="card-image">
+                <div class="card-content"><h3>Veggie Wrap</h3><p>Fresh vegetables, hummus, tortilla</p><div class="price">ETB 120</div><a href="order.html" class="shop-now-btn">Order →</a></div>
+            </div>
+            <!-- Other Drinks -->
+            <div class="product-card" data-cat="drinks">
+                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=300&fit=crop" class="card-image">
+                <div class="card-content"><h3>Fresh Lemonade</h3><p>Homemade, refreshing</p><div class="price">ETB 50</div><a href="order.html" class="shop-now-btn">Order →</a></div>
+            </div>
+            <div class="product-card" data-cat="drinks">
+                <img src="https://images.unsplash.com/photo-1544829099-b9a0c07e1d5c?w=400&h=300&fit=crop" class="card-image">
+                <div class="card-content"><h3>Hot Chocolate</h3><p>Rich, creamy, topped with marshmallows</p><div class="price">ETB 80</div><a href="order.html" class="shop-now-btn">Order →</a></div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="main-footer"><div class="container"><div class="footer-grid"><div class="footer-col"><div class="footer-logo">🍦 VANILLA INN</div><p class="tagline">Freshly Baked, Made with Love ❤️</p></div><div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="order.html">Order</a></li></ul></div><div class="footer-col"><h4>Contact</h4><ul><li><i class="fas fa-phone"></i> +251 942 04 51 82</li><li><i class="fab fa-instagram"></i> @vanillainn12</li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 VANILLA INN — Cafe & Bakery | Freshly Baked, Made with Love ❤️</p></div></div></footer>
+
+<div id="toastMsg" class="toast-msg">✓ Added to cart</div>
+<script src="js/main.js"></script>
+<script>
+    document.querySelectorAll('.cat-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            const cat = this.getAttribute('data-cat');
+            document.querySelectorAll('.product-card').forEach(card => {
+                card.style.display = (cat === 'all' || card.getAttribute('data-cat') === cat) ? 'block' : 'none';
+            });
+        });
+    });
+</script>
+</body>
+</html>
