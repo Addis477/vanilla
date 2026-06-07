@@ -5,7 +5,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    // ========== 1. MOBILE SIDEBAR TOGGLE ==========
+    // ========== MOBILE SIDEBAR TOGGLE ==========
     const mobileSidebar = document.getElementById('mobileSidebar');
     const sidebarOverlay = document.getElementById('sidebarOverlay');
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', closeSidebar);
     });
     
-    // ========== 2. TOAST NOTIFICATION SYSTEM ==========
+    // ========== TOAST NOTIFICATION SYSTEM ==========
     window.showToast = function(message, duration = 2500) {
         let toast = document.getElementById('toastMsg');
         if (!toast) {
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, duration);
     };
     
-    // ========== 3. ACTIVE NAVIGATION LINK ==========
+    // ========== ACTIVE NAVIGATION LINK ==========
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     document.querySelectorAll('.desktop-nav a, .sidebar-nav a').forEach(link => {
         const href = link.getAttribute('href');
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // ========== 4. ADD TO CART BUTTONS (All Pages) ==========
+    // ========== ADD TO CART BUTTONS (All Pages) ==========
     document.querySelectorAll('.add-to-cart').forEach(btn => {
         btn.addEventListener('click', function(e) {
             const itemName = this.getAttribute('data-item') || 'Item';
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // ========== 5. CONTACT FORM SUBMIT ==========
+    // ========== CONTACT FORM SUBMIT ==========
     const sendContactBtn = document.getElementById('sendContactBtn');
     if (sendContactBtn) {
         sendContactBtn.addEventListener('click', function() {
@@ -87,68 +87,9 @@ document.addEventListener('DOMContentLoaded', function() {
             
             showToast('📨 Message sent! We\'ll reply within 24 hours.');
             
-            // Clear form
             if (document.getElementById('contactName')) document.getElementById('contactName').value = '';
             if (document.getElementById('contactEmail')) document.getElementById('contactEmail').value = '';
             if (document.getElementById('contactMsg')) document.getElementById('contactMsg').value = '';
-        });
-    }
-    
-    // ========== 6. REGULAR ORDER FORM SUBMIT ==========
-    const submitOrderBtn = document.getElementById('submitOrderBtn');
-    if (submitOrderBtn) {
-        submitOrderBtn.addEventListener('click', function() {
-            const name = document.getElementById('orderName')?.value.trim();
-            const phone = document.getElementById('orderPhone')?.value.trim();
-            const address = document.getElementById('orderAddress')?.value.trim();
-            
-            if (!name || !phone || !address) {
-                showToast('⚠️ Please fill Name, Phone, and Address');
-                return;
-            }
-            
-            showToast(`✨ Thanks ${name}! Your order has been placed. We'll call you to confirm.`);
-            
-            // Clear form
-            if (document.getElementById('orderName')) document.getElementById('orderName').value = '';
-            if (document.getElementById('orderPhone')) document.getElementById('orderPhone').value = '';
-            if (document.getElementById('orderEmail')) document.getElementById('orderEmail').value = '';
-            if (document.getElementById('orderAddress')) document.getElementById('orderAddress').value = '';
-            if (document.getElementById('specialInstructions')) document.getElementById('specialInstructions').value = '';
-        });
-    }
-    
-    // ========== 7. CATERING/BULK INQUIRY BUTTONS (Scroll to form) ==========
-    document.querySelectorAll('.catering-inquiry, .bulk-inquiry').forEach(btn => {
-        btn.addEventListener('click', function() {
-            const formSection = document.getElementById('cateringForm') || document.getElementById('bulkForm');
-            if (formSection) {
-                formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                showToast('📋 Please fill out the form below');
-            } else {
-                showToast('📋 Please contact us for more information');
-            }
-        });
-    });
-    
-    // ========== 8. CARD ANIMATION ON SCROLL ==========
-    const animateCards = document.querySelectorAll('.product-card');
-    if (animateCards.length > 0) {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-        
-        animateCards.forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
-            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-            observer.observe(card);
         });
     }
     
