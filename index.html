@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="VANILLA INN - Cafe & Bakery. Freshly baked goods made with love in Addis Ababa, Ethiopia">
+    <meta name="theme-color" content="#FFFFFF">
+    <title>VANILLA INN | Cafe & Bakery | Freshly Baked with Love</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="mobile-sidebar" id="mobileSidebar">
+    <div class="sidebar-header">
+        <h3>🍦 VANILLA INN</h3>
+        <button class="close-sidebar" id="closeSidebarBtn"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="sidebar-nav">
+        <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html"><i class="fas fa-heart"></i> About</a>
+        <a href="menu.html"><i class="fas fa-mug-hot"></i> Menu</a>
+        <a href="order.html"><i class="fas fa-shopping-bag"></i> Order</a>
+        <a href="contact.html"><i class="fas fa-map-pin"></i> Contact</a>
+    </div>
+    <a href="order.html" class="sidebar-order-btn"><i class="fas fa-shopping-cart"></i> ORDER NOW</a>
+    <div class="sidebar-footer">
+        <p><i class="fas fa-phone-alt"></i> +251 942 04 51 82</p>
+        <p><i class="fas fa-envelope"></i> lena.mekonometz7@gmail.com</p>
+        <p><i class="fas fa-location-dot"></i> Fira Ababa, Addis Ababa, Ethiopia</p>
+        <p><i class="fab fa-instagram"></i> @vanillainn12 / @vanilla_in</p>
+        <p><i class="fab fa-tiktok"></i> @vanilla_in</p>
+    </div>
+</div>
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<header class="main-header">
+    <div class="container">
+        <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        <div class="logo">
+            <a href="index.html">
+                <h1>🍦 VANILLA INN</h1>
+                <span>Cafe & Bakery</span>
+            </a>
+        </div>
+        <nav class="desktop-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="order.html">Order</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="order.html" class="btn-order"><i class="fas fa-shopping-cart"></i> Order Now</a>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1920&h=800&fit=crop');"></div>
+        <div class="hero-overlay-light"></div>
+        <div class="container hero-content">
+            <h1>Freshly Baked, <span class="highlight">Made with Love</span> ❤️</h1>
+            <p>Artisan coffee & pastries in the heart of Addis Ababa</p>
+            <a href="menu.html" class="hero-btn">Explore Menu →</a>
+        </div>
+    </section>
+
+    <!-- Category Buttons (filter on homepage) -->
+    <div class="category-nav-horizontal">
+        <button class="cat-btn active" data-cat="all">🍽️ All</button>
+        <button class="cat-btn" data-cat="coffee">☕ Coffee</button>
+        <button class="cat-btn" data-cat="pastries">🥐 Pastries</button>
+        <button class="cat-btn" data-cat="cakes">🍰 Cakes</button>
+        <button class="cat-btn" data-cat="sandwiches">🥪 Sandwiches</button>
+    </div>
+
+    <section class="container">
+        <h2 class="section-title">🍦 Our Favorites</h2>
+        <div class="cards-grid" id="productsGrid">
+            <div class="product-card" data-cat="coffee">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop" class="card-image" alt="Vanilla Latte">
+                <div class="card-content">
+                    <h3>Vanilla Latte</h3>
+                    <p>Smooth espresso with creamy vanilla</p>
+                    <div class="price">ETB 85</div>
+                    <a href="order.html" class="shop-now-btn">Order →</a>
+                </div>
+            </div>
+            <div class="product-card" data-cat="pastries">
+                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&h=300&fit=crop" class="card-image" alt="Butter Croissant">
+                <div class="card-content">
+                    <h3>Butter Croissant</h3>
+                    <p>Flaky, golden, 100% butter</p>
+                    <div class="price">ETB 65</div>
+                    <a href="order.html" class="shop-now-btn">Order →</a>
+                </div>
+            </div>
+            <div class="product-card" data-cat="cakes">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9582?w=400&h=300&fit=crop" class="card-image" alt="Vanilla Cake">
+                <div class="card-content">
+                    <h3>Vanilla Bean Cake</h3>
+                    <p>Moist, with real vanilla</p>
+                    <div class="price">ETB 180</div>
+                    <a href="order.html" class="shop-now-btn">Order →</a>
+                </div>
+            </div>
+            <div class="product-card" data-cat="sandwiches">
+                <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&h=300&fit=crop" class="card-image" alt="Chicken Sandwich">
+                <div class="card-content">
+                    <h3>Grilled Chicken Sandwich</h3>
+                    <p>Fresh baguette, grilled chicken, lettuce</p>
+                    <div class="price">ETB 150</div>
+                    <a href="order.html" class="shop-now-btn">Order →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Banner -->
+    <section class="promo-banner">
+        <div class="container">
+            <div class="promo-content">
+                <h3>✨ Fresh Daily ✨</h3>
+                <p>All our pastries are baked fresh every morning</p>
+                <a href="menu.html" class="promo-btn">See Full Menu →</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">🍦 VANILLA INN</div>
+                <p class="tagline">Freshly Baked, Made with Love ❤️</p>
+                <p>Cafe & Bakery<br>Addis Ababa, Ethiopia</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Opening Hours</h4>
+                <ul class="hours">
+                    <li>Monday - Saturday</li>
+                    <li><strong>7:00 AM - 9:00 PM</strong></li>
+                    <li>Sunday</li>
+                    <li><strong>8:00 AM - 6:00 PM</strong></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="contact-info">
+                    <li><i class="fas fa-phone"></i> +251 942 04 51 82</li>
+                    <li><i class="fas fa-envelope"></i> lena.mekonometz7@gmail.com</li>
+                    <li><i class="fab fa-instagram"></i> @vanillainn12</li>
+                    <li><i class="fab fa-tiktok"></i> @vanilla_in</li>
+                    <li><i class="fas fa-location-dot"></i> Fira Ababa, Addis Ababa</li>
+                </ul>
+                <div class="payment-badge">
+                    <span>We Accept:</span>
+                    <i class="fas fa-money-bill-wave"></i>
+                    <i class="fas fa-mobile-alt"></i>
+                    <i class="fas fa-university"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 VANILLA INN — Cafe & Bakery | Freshly Baked, Made with Love ❤️ | Addis Ababa, Ethiopia</p>
+            <p class="footer-heart">✨ Every bite tells a story ✨</p>
+        </div>
+    </div>
+</footer>
+
+<div id="toastMsg" class="toast-msg">✓ Added to cart</div>
+<script src="js/main.js"></script>
+<script>
+    // Homepage category filter
+    const catBtns = document.querySelectorAll('.cat-btn');
+    const products = document.querySelectorAll('.product-card');
+    catBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            catBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            const filter = this.getAttribute('data-cat');
+            products.forEach(product => {
+                if (filter === 'all' || product.getAttribute('data-cat') === filter) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
